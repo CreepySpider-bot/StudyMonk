@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./frame-3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="vector-parent">
+      <img class="frame-child" alt="" src="./public/ellipse-11.svg" />
+
+      <img class="my-project-11" alt="" src="./public/my-project-11@2x.png" />
+
+      <div class="recruitease1">
+        <span> Recruit</span>
+        <span class="ease1">Ease</span>
+      </div>
+      <div class="frame-item"></div>
+      <div class="welcome-back">Search Here</div>
+      <div class="component-4">
+        <!-- <div class="component-4-child"></div> -->
+        <input class="component-4-child" id="myInput" onkeyup="searchFun()" placeholder="Candidate Name"/>
+        <div class="company-name1">Candidate name</div>
+      </div>
+      <!-- <div class="component-5">
+        <div class="component-4-child"></div>
+        <div class="company-name">***************</div>
+        <div class="company-name1">Password</div>
+      </div> -->
+      <!-- <div class="component-31">
+        <div class="component-3-item"></div>
+        <div class="get-started3">Sign up</div>
+      </div> -->
+      <!-- <div class="component-32">
+        <div class="component-3-item"></div>
+        <div class="get-started4">Search</div>
+      </div> -->
+      <button class="component-32" onclick="searchFun()" >Search</button>
+    </div>
+    <div>
+        <table id="myTable">
+            <tr>
+              <th>Name</th>
+              <th>Degree</th>
+              <th>Major</th>
+            </tr>
+            <tr>
+              <td>John Doe</td>
+              <td>Bachelor of Science</td>
+              <td>Computer Science</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>Master of Business Administration</td>
+              <td>Marketing</td>
+            </tr>
+            <tr>
+              <td>Michael Johnson</td>
+              <td>Bachelor of Arts</td>
+              <td>English Literature</td>
+            </tr>
+            <tr>
+              <td>Emily Davis</td>
+              <td>Bachelor of Engineering</td>
+              <td>Electrical Engineering</td>
+            </tr>
+            <tr>
+              <td>Robert Wilson</td>
+              <td>Master of Science</td>
+              <td>Data Science</td>
+            </tr>
+            <tr>
+              <td>Jessica Brown</td>
+              <td>Bachelor of Technology</td>
+              <td>Information Technology</td>
+            </tr>
+            <tr>
+              <td>David Taylor</td>
+              <td>Bachelor of Commerce</td>
+              <td>Finance</td>
+            </tr>
+            <tr>
+              <td>Olivia Clark</td>
+              <td>Master of Arts</td>
+              <td>Psychology</td>
+            </tr>
+            <tr>
+              <td>Daniel Anderson</td>
+              <td>Bachelor of Science</td>
+              <td>Physics</td>
+            </tr>
+            <tr>
+              <td>Sophia Martinez</td>
+              <td>Bachelor of Business Administration</td>
+              <td>Human Resources</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        const searchFun = () =>{
+            console.log("hello")
+            let filter = document.getElementById("myInput").value.toUpperCase();
+            let myTable = document.getElementById("myTable");
+            let tr = myTable.getElementsByTagName('tr');
+            
+            for(var i = 0;i<tr.length;i++){
+                let td = tr[i].getElementsByTagName('td')[0];
+                
+                if(td){
+                    let textValue = td.textContent || td.innerHTML ;
+                    console.log(td)
+                    console.log("-----")
+                    console.log(filter)
+                    if(textValue.toUpperCase().indexOf(filter) > -1){
+                        console.log("gya")
+                        tr[i].style.display = "";
+                    } else{
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+  </body>
+</html>

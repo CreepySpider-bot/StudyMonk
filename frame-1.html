@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./frame-1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="vector-root">
+      <img class="frame-inner" alt="" src="./public/ellipse-12.svg" />
+
+      <div class="recruitease2">
+        <span> Recruit</span>
+        <span class="ease2">Ease</span>
+      </div>
+      <div class="component-11">
+        <div class="about-us1">About us</div>
+        <div class="services1">Services</div>
+        <div class="login1" id="loginText">Login</div>
+      </div>
+      <div class="frame-child1"></div>
+      <img class="my-project-12" alt="" src="./public/my-project-1@2x.png" />
+
+      <div class="create-an-account-container">
+        <p class="create-an-account">Create an account</p>
+        <p class="enter-your-personal">Enter your personal details below</p>
+      </div>
+      <div class="reg">
+        <h3>Create Account</h3>
+        <label>Company Name</label>
+        <input/>
+        <label>Number of Employees</label>
+        <input type="number"/>
+        <label>Contact Name</label>
+        <input/>
+        <label>Email Address</label>
+        <input type="email"/>
+        <label>Create Password</label>
+        <input type="password"/>
+        <label>Re-enter Password</label>
+        <input type="password"/>
+        <label>Mobile Number</label>
+        <input type="number"/>
+        <label>Address</label>
+        <input/>
+        <label>Post Code</label>
+        <input type="number"/>
+        <label>State/Territory</label>
+        <input type="text"/>
+        <div class="checkbox">
+          <input type="checkbox">
+          <label for="vehicle1">I agree to the Terms of Service and Privacy Policy.</label><br>
+        </div>
+        <button class="regibtn" id="regis">REGISTER</button>
+      </div>
+    </div>
+
+    <script>
+      var regis = document.getElementById("regis");
+      if (regis) {
+        regis.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      var loginText = document.getElementById("loginText");
+      if (loginText) {
+        loginText.addEventListener("click", function (e) {
+          window.location.href = "./frame-1.html";
+        });
+      }
+      </script>
+  </body>
+</html>

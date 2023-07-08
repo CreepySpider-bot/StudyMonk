@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="landing-page">
+      <img class="landing-page-child" alt="" src="./public/ellipse-1.svg" />
+
+      <div class="header"></div>
+      <div class="recruitease">
+        <span> Recruit</span>
+        <span class="ease">Ease</span>
+      </div>
+      <div class="component-1">
+        <div class="about-us nav">About us</div>
+        <div class="services nav">Services</div>
+        <div class="login nav" id="loginText">Login</div>
+      </div>
+      <div class="find-perfect-candidate">
+        Find perfect candidate for your job effortlessly and efficiently
+      </div>
+      <img class="my-project-1" alt="" src="./public/my-project-1@2x.png" />
+
+      <!-- <div class="landing-page-item" id="rectangle"></div>
+      <div class="get-started" id="getStartedText">Get Started</div> -->
+      <button class="landing-page-item" id="rectangle">Get Started</button>
+      <img class="interview-1-icon" alt="" src="./public/interview-1@2x.png" />
+
+      <div class="landing-page-inner" id="rectangle1"></div>
+      <div class="get-started1" id="getStartedText1">Get Started</div>
+      <div class="component-2">
+        <a class="know-more" onclick="scrollToSection()">Know more</a>
+        <img class="down-arrow-icon" alt="" src="./public/down-arrow@2x.png" />
+      </div>
+      <div class="rectangle-div" id="targetSection" ></div>
+      <div class="why-recruitease-container"  data-aos="fade-up">
+        <p class="why-recruitease">Why RecruitEase ?</p>
+        <ul class="save-time-and-effort-in-the-hi">
+          <li class="access-a-large-pool-of-qualifi">
+            <span class="save-time-and"
+              >Save time and effort in the hiring process</span
+            >
+          </li>
+          <li class="access-a-large-pool-of-qualifi">
+            <span class="save-time-and"
+              >Access a large pool of qualified candidates</span
+            >
+          </li>
+          <li class="access-a-large-pool-of-qualifi">
+            <span class="save-time-and"
+              >Improved collaboration among hiring teams</span
+            >
+          </li>
+          <li>
+            <span class="save-time-and">Make data-driven hiring decisions</span>
+          </li>
+        </ul>
+      </div>
+      <img
+        class="question-mark-magnifying-glass"
+        alt=""
+        src="./public/question-mark-magnifying-glass@2x.png"
+        data-aos="fade-left"
+      />
+
+      <div class="key-features-efficient-container" data-aos="fade-up">
+        <p class="key-features">Key Features</p>
+        <ul class="save-time-and-effort-in-the-hi">
+          <li class="access-a-large-pool-of-qualifi">
+            <span class="save-time-and">Efficient candidate search</span>
+          </li>
+          <li class="access-a-large-pool-of-qualifi">
+            <span class="save-time-and">Advanced filtering options</span>
+          </li>
+          <li class="access-a-large-pool-of-qualifi">
+            <span class="save-time-and">Automated interview scheduling</span>
+          </li>
+          <li>
+            <span class="save-time-and">Collaborative evaluation tools</span>
+          </li>
+        </ul>
+      </div>
+      <img class="a4-icon" alt="" src="./public/a4@2x.png" 
+      />
+
+      <div class="component-3">
+        <!-- <div class="component-3-child" data-aos="fade-up"></div>
+        <div class="get-started2" data-aos="fade-up">Get Started</div> -->
+        <button class="gsb" id="rectangle2" data-aos="fade-up" onclick="">Get Started</button>
+      </div>
+      <div class="we-recognize-the">
+        We recognize the challenges faced by hiring managers and HR
+        professionals in today's fast-paced and competitive business landscape.
+        With our digital recruitment solution, we strive to provide a seamless
+        and efficient hiring experience, empowering you to find top talent and
+        build exceptional teams. We understand the importance of attracting,
+        assessing, and selecting the right candidates, and we are committed to
+        equipping you with the tools and technology to streamline your hiring
+        process. Together, let's revolutionize the way you discover, connect,
+        and hire exceptional talent.
+      </div>
+      <img class="my-project-2" alt="" src="./public/my-project-1@2x.png" />
+
+      <div class="terms-and-condition">Terms and Condition</div>
+      <div class="privacy-policy">Privacy Policy</div>
+      <div class="all-rights-reserved">
+        All rights reserved. © 2023 RecruitEase.
+      </div>
+      <div class="contact-us-">Contact us :- 1234567890</div>
+      <div class="mail-us-">Mail us :- RecruitEase@gmail.com</div>
+      <img class="facebook-icon" data-aos="flip-left" src="./public/facebook@2x.png" />
+
+      <img class="linkedin-icon" data-aos="flip-left" alt="" src="./public/linkedin@2x.png" />
+
+      <img class="instagram-icon" data-aos="flip-left" alt="" src="./public/instagram@2x.png" />
+
+      <img class="twitter-icon" data-aos="flip-left" alt="" src="./public/twitter@2x.png" />
+
+      <div class="find-your-perfect-candidates-e">
+        <div class="find-your-perfect-container">
+          <span>Find Your Perfect Candidates </span>
+          <span class="ease">Effortlessly.</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var loginText = document.getElementById("loginText");
+      if (loginText) {
+        loginText.addEventListener("click", function (e) {
+          window.location.href = "./frame-2.html";
+        });
+      }
+      
+      var rectangle = document.getElementById("rectangle");
+      if (rectangle) {
+        rectangle.addEventListener("click", function (e) {
+          window.location.href = "./frame-1.html";
+        });
+      }
+      
+      var getStartedText = document.getElementById("getStartedText");
+      if (getStartedText) {
+        getStartedText.addEventListener("click", function (e) {
+          window.location.href = "./frame-1.html";
+        });
+      }
+      
+      var rectangle1 = document.getElementById("rectangle1");
+      if (rectangle1) {
+        rectangle1.addEventListener("click", function (e) {
+          window.location.href = "./frame-1.html";
+        });
+      }
+
+      var rectangle2 = document.getElementById("rectangle2");
+      if (rectangle2) {
+        rectangle2.addEventListener("click", function (e) {
+          window.location.href = "./frame-1.html";
+        });
+      }
+
+      function scrollToSection() {
+        var section = document.getElementById('targetSection');
+        section.scrollIntoView({ behavior: 'smooth' });
+        console.log("hello")
+      }
+      
+      
+      
+      var getStartedText1 = document.getElementById("getStartedText1");
+      if (getStartedText1) {
+        getStartedText1.addEventListener("click", function (e) {
+          window.location.href = "./frame-1.html";
+        });
+      }
+      </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+  </body>
+</html>
