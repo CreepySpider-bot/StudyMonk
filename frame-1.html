@@ -23,9 +23,9 @@
         <span class="ease2">Ease</span>
       </div>
       <div class="component-11">
-        <div class="about-us1">About us</div>
-        <div class="services1">Services</div>
-        <div class="login1" id="loginText">Login</div>
+        <div class="about-us1 nav">About us</div>
+        <div class="services1 nav" id="search">Search Candidate</div>
+        <div class="login1 nav" id="loginText">Login</div>
       </div>
       <div class="frame-child1"></div>
       <img class="my-project-12" alt="" src="./public/my-project-1@2x.png" />
@@ -75,6 +75,12 @@
       if (loginText) {
         loginText.addEventListener("click", function (e) {
           window.location.href = "./frame-1.html";
+        });
+      }
+      var search = document.getElementById("search");
+      if (search) {
+        search.addEventListener("click", function (e) {
+          window.location.href = "./frame-3.html";
         });
       }
       </script>

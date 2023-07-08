@@ -26,7 +26,7 @@
       </div>
       <div class="component-1">
         <div class="about-us nav">About us</div>
-        <div class="services nav">Services</div>
+        <div class="services nav" id="search">Search Candidate</div>
         <div class="login nav" id="loginText">Login</div>
       </div>
       <div class="find-perfect-candidate">
@@ -185,6 +185,13 @@
       if (getStartedText1) {
         getStartedText1.addEventListener("click", function (e) {
           window.location.href = "./frame-1.html";
+        });
+      }
+
+      var search = document.getElementById("search");
+      if (search) {
+        search.addEventListener("click", function (e) {
+          window.location.href = "./frame-3.html";
         });
       }
       </script>

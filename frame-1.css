@@ -23,7 +23,14 @@
 .services1 {
   position: relative;
   font-weight: 300;
+  cursor: pointer;
+  transition: all 0.2s;
 }
+
+.nav:hover{
+  transform: scale(1.05);
+}
+
 .login1,
 .services1 {
   letter-spacing: 0.04em;
